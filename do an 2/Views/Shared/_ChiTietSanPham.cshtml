@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style/TrangChu.css" />
+</head>
+<body>
+    <section class="header-container mainFrame">
+        <div class="header-items">
+            <div class="item">
+                <img src="/image/logo.png" class="logo" alt="Logo">
+            </div>
+            <div class="item" id="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="item" id="cart">
+                <a href="/Shop/GioHang"><img src="/image/cart.png" alt="Cart"></a>
+                <span class="cart-count">3</span>
+            </div>
+            <div class="item" id="login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Đăng nhập</span>
+            </div>
+        </div>
+    </section>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

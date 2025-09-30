@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style/login.css" />
+</head>
+<body>
+    <div class="container">
+        
+            <h1>Dang nhap</h1>
+            <form>
+                <label>Nhap ten dang nhap</label>
+                <input type="text" placeholder="username"/>
+                <label>Mat khau</label>
+                <input type="text" placeholder="password"/>
+            </form>
+            <p>Ban chua co tai khoan?</p><a> dang ky ngay</a>
+            
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

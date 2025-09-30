@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style/ThanhToan.css" />
+</head>
+<body>
+    <div class="ThanhToan-wrapper">
+        <div class="ThanhToan-container">
+            <h2>🛒 Thông tin thanh toán</h2>
+
+            <form id="ThanhToanForm">
+                <div class="form-section">
+                    <h3>👤 Khách hàng</h3>
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" id="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (không bắt buộc)</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <textarea id="address" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>💳 Phương thức thanh toán</h3>
+                    <div class="payment-methods">
+                        <label><input type="radio" name="payment" value="cod" checked> Thanh toán COD</label>
+                        <label><input type="radio" name="payment" value="bank"> Chuyển khoản</label>
+                        <label><input type="radio" name="payment" value="momo"> Ví MoMo</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>📦 Đơn hàng</h3>
+                    <ul id="orderItems">
+                        <li>
+                            <img src="~/image/ip15.png" />
+                            <div class="item-info">
+                                <p class="item-name">iPhone 15</p>
+                                <p class="item-version">Phiên bản: 128GB</p>
+                                <p class="item-price">Giá: 30,000,000₫</p>
+                                <div class="qty-control">
+                                    <button type="button" class="btn-qty minus">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1" data-price="30000000" data-name="iPhone 15 128GB">
+                                    <button type="button" class="btn-qty plus">+</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="discount-box">
+                        <input type="text" id="discountCode" placeholder="Nhập mã giảm giá...">
+                        <button type="button" id="applyDiscount">Áp dụng</button>
+                    </div>
+                    <p id="discountMsg" class="discount-msg"></p>
+                    <p class="total">Tạm tính: <span id="orderSubtotal">30,000,000 VND</span></p>
+                    <p class="total">Giảm giá: <span id="orderDiscount">0 VND</span></p>
+                    <p class="total grand">Tổng cộng: <span id="orderTotal">30,000,000 VND</span></p>
+                </div>
+                <button type="submit" class="btn-submit">✅ Xác nhận đặt hàng</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

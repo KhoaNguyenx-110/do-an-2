@@ -1,0 +1,220 @@
+﻿body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.ThanhToan-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.ThanhToan-container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+    .form-section h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.payment-methods label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#orderItems {
+    list-style: none;
+    padding: 0;
+}
+
+    #orderItems li {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+.qty-control {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.btn-qty {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.discount-box {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+    .discount-box input {
+        flex: 1;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .discount-box button {
+        padding: 8px 15px;
+        border: none;
+        background: #28a745;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+        .discount-box button:hover {
+            background: #218838;
+        }
+
+.discount-msg {
+    margin-top: 5px;
+    color: #28a745;
+}
+
+.total {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+    .total.grand {
+        font-size: 18px;
+        font-weight: bold;
+        color: #e63946;
+    }
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .btn-submit:hover {
+        background: #0056b3;
+    }
+#orderItems li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+    #orderItems li img {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        background: #fff;
+    }
+
+.item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.item-version {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+}
+
+.item-price {
+    font-size: 15px;
+    color: #007bff;
+    margin: 3px 0 8px;
+}
+
