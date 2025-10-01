@@ -146,6 +146,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\style\Cart.css" />
     <Content Include="Content\style\ChiTietSP.css" />
+    <Content Include="Content\style\Feature.css" />
     <Content Include="Content\style\login.css" />
     <Content Include="Content\style\Phone.css" />
     <Content Include="Content\style\ThanhToan.css" />
@@ -155,14 +156,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="image\accessories.png" />
     <Content Include="image\cart.png" />
+    <Content Include="image\headphonesony.png" />
     <Content Include="image\ip15.png" />
     <Content Include="image\laptop.png" />
+    <Content Include="image\laptopgaming.png" />
     <Content Include="image\login.png" />
     <Content Include="image\logo.png" />
     <Content Include="image\lót.png" />
     <Content Include="image\mouse.png" />
     <Content Include="image\phone.png" />
     <Content Include="image\smartwatch.png" />
+    <Content Include="image\smartwatchapple.png" />
     <Content Include="image\tablet.png" />
     <Content Include="image\z-flip7.png" />
     <Content Include="image\z-fold7.png" />
@@ -172,7 +176,6 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="image\mouse.webp" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
