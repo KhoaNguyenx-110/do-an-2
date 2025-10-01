@@ -3,10 +3,9 @@
     ViewBag.Title = "Phone";
     Layout = "~/Views/Shared/_TrangChu.cshtml";
 }
-<link href="~/Content/style/Phone.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/Content/style/Phone.css" />
 
 <section class="product-list">
-   
     <div class="product-card">
         <a href="ChiTietSP">
             <img src="~/image/ip15.png" alt="Iphone 15" />
@@ -17,12 +16,182 @@
             ★★★★☆
         </div>
         <div class="actions">
-            <button class="btn-cart">🛒 Thêm vào giỏ</button>
+            <button class="btn-cart" onclick="location.href='/Shop/GioHang'">🛒 Thêm vào giỏ</button>
             <button class="btn-like">♡</button>
         </div>
     </div>
-   
+
+    <div class="product-card">
+        <a href="ChiTietSP">
+            <img src="~/image/ip15.png" alt="Iphone 15" />
+        </a>
+        <p class="product-title">Iphone 15 256GB chính hãng</p>
+        <p class="product-price">30.000.000₫</p>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <div class="actions">
+            <button class="btn-cart" onclick="location.href='/Shop/GioHang'">🛒 Thêm vào giỏ</button>
+            <button class="btn-like">♡</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <a href="ChiTietSP">
+            <img src="~/image/ip15.png" alt="Iphone 15" />
+        </a>
+        <p class="product-title">Iphone 15 256GB chính hãng</p>
+        <p class="product-price">30.000.000₫</p>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <div class="actions">
+            <button class="btn-cart" onclick="location.href='/Shop/GioHang'">🛒 Thêm vào giỏ</button>
+            <button class="btn-like">♡</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <a href="ChiTietSP">
+            <img src="~/image/ip15.png" alt="Iphone 15" />
+        </a>
+        <p class="product-title">Iphone 15 256GB chính hãng</p>
+        <p class="product-price">30.000.000₫</p>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <div class="actions">
+            <button class="btn-cart" onclick="location.href='/Shop/GioHang'">🛒 Thêm vào giỏ</button>
+            <button class="btn-like">♡</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <a href="ChiTietSP">
+            <img src="~/image/ip15.png" alt="Iphone 15" />
+        </a>
+        <p class="product-title">Iphone 15 256GB chính hãng</p>
+        <p class="product-price">30.000.000₫</p>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <div class="actions">
+            <button class="btn-cart" onclick="location.href='/Shop/GioHang'">🛒 Thêm vào giỏ</button>
+            <button class="btn-like">♡</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <a href="ChiTietSP">
+            <img src="~/image/ip15.png" alt="Iphone 15" />
+        </a>
+        <p class="product-title">Iphone 15 256GB chính hãng</p>
+        <p class="product-price">30.000.000₫</p>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <div class="actions">
+            <button class="btn-cart" onclick="location.href='/Shop/GioHang'">🛒 Thêm vào giỏ</button>
+            <button class="btn-like">♡</button>
+        </div>
+    </div>
 </section>
+@*<style>
+        .product-card {
+            width: 220px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 15px;
+            position: relative;
+        }
+
+        .product-list a {
+            text-decoration: none;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 30px;
+            color: #e63946;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            font-size: 18px;
+            color: #FFD700;
+            margin-bottom: 12px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-cart {
+            flex: 1;
+            background: #007bff;
+            border: none;
+            color: white;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-right: 8px;
+        }
+
+            .btn-cart:hover {
+                background: #0056b3;
+            }
+
+        .btn-like {
+            background: none;
+            border: 1px solid #ddd;
+            font-size: 20px;
+            padding: 6px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .btn-like:hover {
+                background: #ffe6e6;
+                color: red;
+                border-color: red;
+            }
+    </style>*@
 
 
 

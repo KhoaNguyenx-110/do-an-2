@@ -45,5 +45,9 @@ namespace do_an_2.Controllers
         {
             return View();
         }
+        public ActionResult HoaDon()
+        {
+            return View();
+        }
     }
 }

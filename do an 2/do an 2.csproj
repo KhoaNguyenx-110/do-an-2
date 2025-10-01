@@ -213,6 +213,8 @@
     <Content Include="Views\Shop\Laptop.cshtml" />
     <Content Include="Views\Shop\Headphone.cshtml" />
     <Content Include="Views\Shop\Smartwatch.cshtml" />
+    <Content Include="Views\Shared\_HoaDon.cshtml" />
+    <Content Include="Views\Shop\HoaDon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

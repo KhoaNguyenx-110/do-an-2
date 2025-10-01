@@ -10,8 +10,14 @@
     margin: 15px;
     position: relative;
 }
-.product-list a:{
+.product-list a{
     text-decoration: none;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 
@@ -34,7 +40,7 @@
 }
 
 .product-price {
-    font-size: 15px;
+    font-size: 30px;
     color: #e63946;
     font-weight: bold;
     margin-bottom: 10px;
