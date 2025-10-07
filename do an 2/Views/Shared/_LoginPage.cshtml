@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/Content/style/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
-    <div class="container">
-        
-            <h1>Dang nhap</h1>
-            <form>
-                <label>Nhap ten dang nhap</label>
-                <input type="text" placeholder="username"/>
-                <label>Mat khau</label>
-                <input type="text" placeholder="password"/>
-            </form>
-            <p>Ban chua co tai khoan?</p><a>dang ky ngay</a>
-            
+    <div class="login-container">
+        <h1>Đăng nhập</h1>
+
+        <form>
+            <label>Tên đăng nhập</label>
+            <input type="text" placeholder="username" />
+
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="password" />
+
+            <button type="submit" class="btn-login">Đăng nhập</button>
+        </form>
+
+        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+
+        <div class="login-divider">
+            <span>Hoặc đăng nhập bằng</span>
+        </div>
+
+        <div class="social-login">
+            <a href="#" class="btn-social facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="btn-social google"><i class="fab fa-google"></i> Google</a>
+        </div>
     </div>
+
     <div>
         @RenderBody()
     </div>

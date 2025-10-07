@@ -159,6 +159,8 @@
     <Content Include="image\cart.png" />
     <Content Include="image\headphonesony.png" />
     <Content Include="image\ip15.png" />
+    <Content Include="image\ipadmini.png" />
+    <Content Include="image\ipadsale.png" />
     <Content Include="image\laptop.png" />
     <Content Include="image\laptopgaming.png" />
     <Content Include="image\login.png" />

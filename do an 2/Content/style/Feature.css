@@ -1,7 +1,6 @@
 ﻿.hero-banner img {
-    width: 100%;
+    width: 110%;
     height: 100%;
-    object-fit: cover; 
 }
 
 .banner-text {
@@ -122,4 +121,157 @@
 
     .btn-cart:hover {
         background: #cc0044;
+    }
+.weekend-sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #b9edf2, #f7f9fa);
+}
+
+.hot-trend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 183, 255, 0.15);
+    padding: 30px 40px;
+    max-width: 1000px;
+    width: 100%;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    
+}
+
+    .hot-trend:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 35px rgba(0, 183, 255, 0.3);
+    }
+
+    .hot-trend img {
+        width: 350px;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+        filter: brightness(0.95);
+        transition: transform 0.4s ease;
+    }
+
+    .hot-trend:hover img {
+        transform: scale(1.05);
+    }
+
+.hot-trend-text {
+    flex: 1;
+    color: #003566;
+    font-family: 'Poppins', sans-serif;
+}
+
+    .hot-trend-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #00b4d8, #0077b6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hot-trend-text p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #005f73;
+    }
+
+.btn-hot-trend {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #00b4d8, #0077b6);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 15px rgba(0, 183, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+    .btn-hot-trend:hover {
+        transform: translateY(-5px);
+        background: linear-gradient(90deg, #0096c7, #00b4d8);
+        box-shadow: 0 0 25px rgba(0, 183, 255, 0.6);
+    }
+
+
+.weekend-sale{
+    display:grid;
+    grid-template-columns:40% 60%;
+}
+.best-seller-sale{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.weekend-sale h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.weekend-sale-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #00b4d8, #0077b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin: 40px 0 20px 0;
+}
+    .weekend-sale-title::after {
+        content: '';
+        position: absolute;
+        transform: translateX(-50%);
+        left:50%;
+        bottom:-10px;
+        width: 120px;
+        height: 4px;
+        background: linear-gradient(90deg, #00b4d8, #90e0ef);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    .weekend-sale-title:hover::after {
+        width: 160px;
+        background: linear-gradient(90deg, #0096c7, #00b4d8);
+        box-shadow: 0 0 15px rgba(0, 183, 255, 0.6);
+    }
+.weekend-sale-subtitle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #005f73;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+   
+    .weekend-sale-subtitle:hover {
+        color: #00b4d8;
+        text-shadow: 0 0 8px rgba(0, 183, 255, 0.4);
+        transform: scale(1.02);
+        opacity: 1;
+    }
+    .best-seller-sale{
+        display: flex;
+        flex-direction:column;
+    }
+    .best-seller-sale-container{
+        display:flex;
+        flex-direction:row;
+        gap:3px;
     }

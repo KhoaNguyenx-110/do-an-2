@@ -5,6 +5,8 @@
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/Content/style/TrangChu.css" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
     <section class="header-container mainFrame">
@@ -47,11 +49,52 @@
             </div>
         </div>
     </section>
-   
+
 
 
     <div>
         @RenderBody()
     </div>
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-contact">
+                <h3>Liên hệ</h3>
+                <p>Bạn cần hỗ trợ?</p>
+                <p>📞 0849 976 638</p>
+                <p>🏠 39/11 Nguyễn Ngọc Cung, Phường Phú Định, Quận 8, TP.HCM</p>
+                <p>✉️ soulertech@gmail.com</p>
+            </div>
+
+            
+            <div class="footer-links">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="/Shop/TrangChu">Trang chủ</a></li>
+                    <li><a href="/Shop/Phone">Điện thoại</a></li>
+                    <li><a href="/Shop/Laptop">Laptop</a></li>
+                    <li><a href="/Shop/Smartwatch">SmartWatch</a></li>
+                    <li><a href="/Shop/Headphone">Tai nghe</a></li>
+                    <li><a href="/Shop/LienHe">Liên hệ</a></li>
+                </ul>
+            </div>
+
+           
+            <div class="footer-social">
+                <h3>Kết nối với chúng tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p>© 2025 Souler Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
