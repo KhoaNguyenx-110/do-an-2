@@ -155,6 +155,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="image\accessories.png" />
+    <Content Include="image\banner.jpg" />
     <Content Include="image\cart.png" />
     <Content Include="image\headphonesony.png" />
     <Content Include="image\ip15.png" />

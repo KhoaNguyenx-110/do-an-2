@@ -25,15 +25,11 @@ body {
     justify-content: space-between;
     gap: 20px;
 }
-
-
 .logo {
     height: 80px;
     width: auto;
     object-fit: contain;
 }
-
-
 #search-bar {
     flex: 1;
     display: flex;
@@ -161,14 +157,14 @@ body {
 
 .product-categories {
     display: flex;
-    justify-content: space-around; /* giãn đều khoảng cách */
+    justify-content: space-around; 
     align-items: center;
     flex-direction: row;
     width: 80%;
 }
 
     .product-categories div {
-        flex: 1; /* chia đều chiều ngang */
+        flex: 1; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -178,11 +174,11 @@ body {
     }
 
         .product-categories div img {
-            max-width: 80px; /* giới hạn kích thước icon */
+            max-width: 80px;
             height: auto;
         }
 
-        /* Hover */
+        
         .product-categories div:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -190,7 +186,7 @@ body {
             background-color: #f5f7fa;
         }
 
-        /* Active */
+        
         .product-categories div:active {
             transform: scale(0.95);
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
@@ -206,10 +202,9 @@ body {
 }
 
     .hero-banner img {
-        width: 100%;
+        width: 1000px;
         height: 100%;
-        object-fit: cover; /* đảm bảo ảnh fill banner */
-        filter: brightness(0.7); /* làm tối ảnh để chữ nổi bật */
+        filter: brightness(0.7); 
     }
 
 .banner-text {
@@ -235,7 +230,7 @@ body {
     }
 
 .btn-banner {
-    background: #ff4d4f;
+    background: #00c6ff;
     color: #fff;
     padding: 12px 24px;
     border-radius: 8px;
@@ -247,7 +242,8 @@ body {
 }
 
     .btn-banner:hover {
-        background: #d9363e;
-        transform: scale(1.05);
+        transform: translateY(-6px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(0, 183, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.3);
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
     }
 
